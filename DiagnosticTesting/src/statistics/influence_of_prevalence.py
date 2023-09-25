@@ -94,7 +94,7 @@ def influence_3ppv_of_prevalence_on_diagnostic_testing(
 
     # Plot the PPVs and NPVs
     plotting_prevalences = np.logspace(power_min, power_max, n)  # x ticks for plot
-    title = 'Influence of Disease Prevalence (π) on PPV and NPV \n'
+    title = 'Influence of Disease Prevalence (π) on PPV \n'
     plot_3ppv_influence_of_prevalence(
         ppvs1=ppvs1, ppvs2=ppvs2, ppvs3=ppvs3, prevalences=prevalences,
         label1=f'Sensitivity = {sensitivities[0]:.3f}, Specificity = '
