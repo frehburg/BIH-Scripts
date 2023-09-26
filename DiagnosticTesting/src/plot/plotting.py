@@ -71,9 +71,12 @@ def plot_3ppv_influence_of_prevalence(
     plt.plot(prevalences, ppvs2, 'k--', label=label2)
     plt.plot(prevalences, ppvs3, 'k-.', label=label3)
 
-    plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.35))
+    plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.40))
 
     plt.title(title)
+
+    # Adjust the subplot parameters
+    plt.subplots_adjust(bottom=0.25)
 
     if save:
         save_path = Path(save_path).resolve()
